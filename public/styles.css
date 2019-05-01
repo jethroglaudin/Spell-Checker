@@ -1,0 +1,36 @@
+html {
+    background: url(imgs/dictionary.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.title{
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#searchContainer{
+    text-align: center;
+    margin: 20px;
+    justify-content: space-around;
+    
+}
+
+#input{
+    text-align: center;
+}
+
+#searchResult{
+    text-align: center;
+    font-size: 30px;
+}
+
+.found{
+    color: green;
+}
+
+.missing{
+    color: red;
+}

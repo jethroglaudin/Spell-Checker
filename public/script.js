@@ -9,3 +9,5 @@ axios.get(url)
         document.querySelector('#searchResult').innerHTML = response.data;
     });
 }
+
+findWord()
