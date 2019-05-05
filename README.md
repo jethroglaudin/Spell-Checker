@@ -1,2 +1,2 @@
-The url to use is :https://careerdevsjg-jethroglaudin.c9users.io/api/?word=
-Type in a word to see if it's indeed in the script checker.
+API Spell Checker
+The app works by taking in the user's input and checks whether or not it's in a json dictionary file. Then, it will respond back to the user whether or not their word is indeed in the dictionary. 
