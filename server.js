@@ -1,8 +1,9 @@
 const express = require("express");
 // const words = require('./spellcheck');
-const dictionary = require('./dictionary');
+// const dictionary = require('./dictionary');
 const mongoose = require('mongoose');
 const Words = require('./models/Word');
+const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.Port || 8080;
 // process.env.Port grabs its default port || 5000 checks if the first argument exists if not it uses 5000//
@@ -18,10 +19,7 @@ mongoose.connect('mongodb://localhost:27017/spellchecker', { useNewUrlParser: tr
     }
 });
 mongoose.Promise = global.Promise;
-const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 app.use(express.static('public'));
 
 app.get('/api', function(req, res) {
