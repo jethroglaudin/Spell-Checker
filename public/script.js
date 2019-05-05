@@ -15,6 +15,7 @@ axios.get(url)
         document.querySelector('#searchResult').innerHTML = response.data
     });
 }
+findWord();
 
 //   let lookedupWord = response.data[0].word;
 //         if (word !== lookedupWord ){
